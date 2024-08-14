@@ -1,6 +1,9 @@
 $(document).ready(function(){
     let i = 0;
     let count = $(".main_images>li").length;
+
+
+
     let autoSlide = setInterval(function(){
         if(i == count-1){
             i = 0;
@@ -12,6 +15,21 @@ $(document).ready(function(){
     }, 5000);
 
     slideDown();
+
+    $(".arrow").mouseenter(function(){
+        clearInterval(autoSlide);
+    });
+    $(".arrow").mouseleave(function(){
+        autoSlide = setInterval(function(){
+            if(i == count-1){
+                i = 0;
+            }else{
+                i++;
+            }
+            show();
+            slideDown();
+        }, 5000);
+    });
 
     $(".next").click(function(){
         if(i == count-1){
