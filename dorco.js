@@ -38,6 +38,9 @@ $(document).ready(function(){
             $(".top").stop().fadeOut(300)
         }
     });
+    $(".top").click(function(){
+        $("html,body").stop().animate({scrollTop : 0}, 500);
+    });
 
     function show(){
         $(".main_images").stop().animate({"margin-top":"-200vh"}, 1500, function(){
