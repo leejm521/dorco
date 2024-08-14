@@ -284,6 +284,7 @@ body{
 #section .faq .tab_menu .buy li>p{
     margin: 30px 0;
     display: none;
+    font-weight: 400;
 }
 /* ---------------------------------------------------------- */
 #section .faq .tab_menu .prod{width: 100%; margin-bottom: 150px; display: none;}
@@ -318,6 +319,7 @@ body{
 #section .faq .tab_menu .prod li>p{
     margin: 30px 0;
     display: none;
+    font-weight: 400;
 }
 
 /* ----------------------------------------------------------- */
